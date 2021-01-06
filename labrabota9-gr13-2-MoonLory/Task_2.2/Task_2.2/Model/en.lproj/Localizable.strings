@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  Task_2.2
+
+  Created by Admin on 18/05/2020.
+  Copyright © 2020 Admin. All rights reserved.
+*/
+
+"Weather" = "Weather";
+"show" = "show";
+"rain" = "rain";
+"snow" = "snow";
+"no precipit" = "no precipit";
+"rain and snow" = "rain and snow";
+"Your local:" = "Your local:";
+"name" = "name";
+"descrip" = "descrip";
+"Wind" = "Wind";
+"Precipit" = "Precipitations";
+"Humid" = "Humid";
+"Part:" = "Part:";
+"en_US" = "en_US";
+"m/s" = "m/s";

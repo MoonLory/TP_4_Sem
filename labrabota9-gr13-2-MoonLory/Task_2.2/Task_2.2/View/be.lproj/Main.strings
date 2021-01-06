@@ -1,0 +1,39 @@
+
+/* Class = "UILabel"; text = "Weather"; ObjectID = "1CY-IZ-mMH"; */
+"1CY-IZ-mMH.text" = "Надвор'е";
+
+/* Class = "UILabel"; text = "Precipitations"; ObjectID = "63l-Tw-WnG"; */
+"63l-Tw-WnG.text" = "Ападкі";
+
+/* Class = "UILabel"; text = "Wind speed"; ObjectID = "Ca3-EU-C8i"; */
+"Ca3-EU-C8i.text" = "Хуткасць ветру";
+
+/* Class = "UILabel"; text = "Parties:"; ObjectID = "Cwc-q2-dtc"; */
+"Cwc-q2-dtc.text" = "Мерапрыемства:";
+
+/* Class = "UIButton"; normalTitle = "Show"; ObjectID = "NXK-3t-wZc"; */
+"NXK-3t-wZc.normalTitle" = "Паказаць";
+
+/* Class = "UIButton"; normalTitle = "OK"; ObjectID = "QBV-SE-oJ9"; */
+"QBV-SE-oJ9.normalTitle" = "OK";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "kcK-HA-rqC"; */
+"kcK-HA-rqC.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "OK"; ObjectID = "kyp-aQ-bmB"; */
+"kyp-aQ-bmB.normalTitle" = "OK";
+
+/* Class = "UILabel"; text = "Temperature"; ObjectID = "nXh-v0-nXA"; */
+"nXh-v0-nXA.text" = "Тэмпература";
+
+/* Class = "UISegmentedControl"; yKx-iw-fBg.segmentTitles[0] = "Eng"; ObjectID = "yKx-iw-fBg"; */
+"yKx-iw-fBg.segmentTitles[0]" = "Eng";
+
+/* Class = "UISegmentedControl"; yKx-iw-fBg.segmentTitles[1] = "Рус"; ObjectID = "yKx-iw-fBg"; */
+"yKx-iw-fBg.segmentTitles[1]" = "Рус";
+
+/* Class = "UISegmentedControl"; yKx-iw-fBg.segmentTitles[2] = "Бел"; ObjectID = "yKx-iw-fBg"; */
+"yKx-iw-fBg.segmentTitles[2]" = "Бел";
+
+/* Class = "UILabel"; text = "Humidity"; ObjectID = "zow-j3-buV"; */
+"zow-j3-buV.text" = "Вільготнасць паветра";

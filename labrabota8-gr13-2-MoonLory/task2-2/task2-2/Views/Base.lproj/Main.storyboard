@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="task2_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="IU5-KK-SLP">
+                                <rect key="frame" x="61" y="64" width="252" height="29"/>
+                                <segments>
+                                    <segment title="Curvilinear Triangle"/>
+                                    <segment title="Hexagon"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeGeometricShape:" destination="BYZ-38-t0r" eventType="valueChanged" id="V0j-02-jwL"/>
+                                </connections>
+                            </segmentedControl>
+                            <view opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zTX-d0-Yq9" customClass="CurvilinearTriangleView" customModule="task2_2" customModuleProvider="target">
+                                <rect key="frame" x="37" y="150" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NTQ-27-tm8" customClass="HexagonView" customModule="task2_2" customModuleProvider="target">
+                                <rect key="frame" x="37" y="150" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="igX-Nr-zg5">
+                                <rect key="frame" x="98" y="471" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="b5l-sl-mvZ">
+                                <rect key="frame" x="98" y="525" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sbR-co-C4J">
+                                <rect key="frame" x="229" y="471" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0GQ-Zx-Ibh">
+                                <rect key="frame" x="229" y="525" width="51" height="31"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vI-cC-bsl">
+                                <rect key="frame" x="164" y="586" width="57" height="30"/>
+                                <state key="normal" title="Animate"/>
+                                <connections>
+                                    <action selector="animateView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fmv-mm-IVL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="zTX-d0-Yq9" firstAttribute="bottom" secondItem="NTQ-27-tm8" secondAttribute="bottom" id="14F-dq-KP3"/>
+                            <constraint firstItem="IU5-KK-SLP" firstAttribute="centerX" secondItem="NTQ-27-tm8" secondAttribute="centerX" id="15a-HV-TZf"/>
+                            <constraint firstItem="igX-Nr-zg5" firstAttribute="top" secondItem="sbR-co-C4J" secondAttribute="top" id="ADU-7O-zQW"/>
+                            <constraint firstItem="IU5-KK-SLP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DzB-w5-WeW"/>
+                            <constraint firstItem="IU5-KK-SLP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="ECc-6n-Deo"/>
+                            <constraint firstItem="igX-Nr-zg5" firstAttribute="leading" secondItem="b5l-sl-mvZ" secondAttribute="leading" id="GIw-T4-vTf"/>
+                            <constraint firstItem="b5l-sl-mvZ" firstAttribute="top" secondItem="igX-Nr-zg5" secondAttribute="bottom" constant="23" id="PYQ-f2-89f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="b5l-sl-mvZ" secondAttribute="bottom" constant="111" id="QOH-ZI-Kz0"/>
+                            <constraint firstItem="zTX-d0-Yq9" firstAttribute="top" secondItem="NTQ-27-tm8" secondAttribute="top" id="RHc-Na-owf"/>
+                            <constraint firstItem="IU5-KK-SLP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="RsW-xM-FO0"/>
+                            <constraint firstItem="3vI-cC-bsl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="164" id="YdI-gb-zrY"/>
+                            <constraint firstItem="zTX-d0-Yq9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="Z5O-zk-WPg"/>
+                            <constraint firstItem="sbR-co-C4J" firstAttribute="leading" secondItem="0GQ-Zx-Ibh" secondAttribute="leading" id="beu-UI-FeH"/>
+                            <constraint firstItem="zTX-d0-Yq9" firstAttribute="top" secondItem="IU5-KK-SLP" secondAttribute="bottom" constant="58" id="d2e-5d-IWr"/>
+                            <constraint firstItem="zTX-d0-Yq9" firstAttribute="leading" secondItem="NTQ-27-tm8" secondAttribute="leading" id="dTu-RQ-AP0"/>
+                            <constraint firstItem="NTQ-27-tm8" firstAttribute="trailing" secondItem="zTX-d0-Yq9" secondAttribute="trailing" id="exR-hw-fpm"/>
+                            <constraint firstItem="sbR-co-C4J" firstAttribute="leading" secondItem="igX-Nr-zg5" secondAttribute="trailing" constant="82" id="fob-42-vv0"/>
+                            <constraint firstItem="igX-Nr-zg5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="98" id="mmi-j0-Wcv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3vI-cC-bsl" secondAttribute="bottom" constant="51" id="raq-GR-oGG"/>
+                            <constraint firstItem="b5l-sl-mvZ" firstAttribute="top" secondItem="0GQ-Zx-Ibh" secondAttribute="top" id="vMq-bS-R4H"/>
+                            <constraint firstItem="igX-Nr-zg5" firstAttribute="top" secondItem="zTX-d0-Yq9" secondAttribute="bottom" constant="21" id="zyX-mm-M7Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="t8q-rd-f5a" appends="YES" id="0XJ-tv-Nr2"/>
+                            <outletCollection property="gestureRecognizers" destination="EJq-MY-b7d" appends="YES" id="Tlh-s9-OUm"/>
+                            <outletCollection property="gestureRecognizers" destination="HyN-GM-Prd" appends="YES" id="Lna-Yw-f1T"/>
+                            <outletCollection property="gestureRecognizers" destination="Y88-2T-Hn0" appends="YES" id="Q2M-th-3AD"/>
+                            <outletCollection property="gestureRecognizers" destination="S5C-U4-Gyc" appends="YES" id="a8f-F8-cWr"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="changeSizeSwitch" destination="sbR-co-C4J" id="pzp-YO-uK3"/>
+                        <outlet property="currentShape" destination="IU5-KK-SLP" id="UO4-Z2-hc8"/>
+                        <outlet property="curvTriangleView" destination="zTX-d0-Yq9" id="4LB-On-rjY"/>
+                        <outlet property="hexagonView" destination="NTQ-27-tm8" id="M3O-sL-e8W"/>
+                        <outlet property="moveSwitch" destination="igX-Nr-zg5" id="KRy-Go-ZTq"/>
+                        <outlet property="rotateSwitch" destination="b5l-sl-mvZ" id="JF3-v9-CzB"/>
+                        <outlet property="transparencySwitch" destination="0GQ-Zx-Ibh" id="OXg-mY-R9l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <rotationGestureRecognizer id="t8q-rd-f5a">
+                    <connections>
+                        <action selector="rotate:" destination="BYZ-38-t0r" id="xl6-wP-246"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <pinchGestureRecognizer id="EJq-MY-b7d">
+                    <connections>
+                        <action selector="pinch:" destination="BYZ-38-t0r" id="OqJ-wi-nA6"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <tapGestureRecognizer id="HyN-GM-Prd">
+                    <connections>
+                        <action selector="tap:" destination="BYZ-38-t0r" id="VjL-Ck-zSq"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Y88-2T-Hn0">
+                    <connections>
+                        <action selector="longPress:" destination="BYZ-38-t0r" id="cDV-Bg-2e1"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="S5C-U4-Gyc">
+                    <connections>
+                        <action selector="swipe:" destination="BYZ-38-t0r" id="ULz-jh-W6g"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

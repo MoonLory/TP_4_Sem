@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  Task_2.2
+
+  Created by Admin on 18/05/2020.
+  Copyright © 2020 Admin. All rights reserved.
+*/
+
+"Weather" = "Погода";
+"show" = "показать";
+"rain" = "дождь";
+"snow" = "снег";
+"no precipit" = "Без осадков";
+"rain and snow" = "мокрый снег";
+"Your local:" = "Ваш район:";
+"name" = "rusName";
+"descrip" = "rusDescriptions";
+"Wind" = "Скорость ветра";
+"Precipit" = "Осадки";
+"Humid" = "Влажность воздуха";
+"Part:" = "Мероприятия:";
+"en_US" = "ru_RU";
+"m/s" = "м/с";

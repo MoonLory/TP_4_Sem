@@ -1,0 +1,45 @@
+
+/* Class = "UILabel"; text = "Согласен с правилами"; ObjectID = "5bu-Ft-7tW"; */
+"5bu-Ft-7tW.text" = "Согласен с правилами";
+
+/* Class = "UITextField"; placeholder = "Пароль"; ObjectID = "5g3-7t-hce"; */
+"5g3-7t-hce.placeholder" = "Пароль";
+
+/* Class = "UITextField"; placeholder = "E-mail"; ObjectID = "9rP-eh-cTg"; */
+"9rP-eh-cTg.placeholder" = "E-mail";
+
+/* Class = "UIButton"; normalTitle = "Ввод"; ObjectID = "AvQ-iD-FMn"; */
+"AvQ-iD-FMn.normalTitle" = "Ввод";
+
+/* Class = "UIButton"; normalTitle = "Default"; ObjectID = "BBA-hw-MlV"; */
+"BBA-hw-MlV.normalTitle" = "Default";
+
+/* Class = "UITextField"; placeholder = "Повторите пароль"; ObjectID = "IHN-Gf-L3a"; */
+"IHN-Gf-L3a.placeholder" = "Повторите пароль";
+
+/* Class = "UITextField"; placeholder = "Пароль"; ObjectID = "LEd-kZ-3jc"; */
+"LEd-kZ-3jc.placeholder" = "Пароль";
+
+/* Class = "UIButton"; normalTitle = "Зарегистрироваться"; ObjectID = "NRE-oI-XGw"; */
+"NRE-oI-XGw.normalTitle" = "Зарегистрироваться";
+
+/* Class = "UISegmentedControl"; X4h-BD-Hcn.segmentTitles[0] = "Вход"; ObjectID = "X4h-BD-Hcn"; */
+"X4h-BD-Hcn.segmentTitles[0]" = "Вход";
+
+/* Class = "UISegmentedControl"; X4h-BD-Hcn.segmentTitles[1] = "Регистрация"; ObjectID = "X4h-BD-Hcn"; */
+"X4h-BD-Hcn.segmentTitles[1]" = "Регистрация";
+
+/* Class = "UITextField"; placeholder = "Логин"; ObjectID = "YZk-7x-1C8"; */
+"YZk-7x-1C8.placeholder" = "Логин";
+
+/* Class = "UITextField"; placeholder = "Логин"; ObjectID = "Yud-G3-bm5"; */
+"Yud-G3-bm5.placeholder" = "Логин";
+
+/* Class = "UISegmentedControl"; fRg-vw-JJ9.segmentTitles[0] = "EN"; ObjectID = "fRg-vw-JJ9"; */
+"fRg-vw-JJ9.segmentTitles[0]" = "EN";
+
+/* Class = "UISegmentedControl"; fRg-vw-JJ9.segmentTitles[1] = "RU"; ObjectID = "fRg-vw-JJ9"; */
+"fRg-vw-JJ9.segmentTitles[1]" = "RU";
+
+/* Class = "UISegmentedControl"; fRg-vw-JJ9.segmentTitles[2] = "BY"; ObjectID = "fRg-vw-JJ9"; */
+"fRg-vw-JJ9.segmentTitles[2]" = "BY";

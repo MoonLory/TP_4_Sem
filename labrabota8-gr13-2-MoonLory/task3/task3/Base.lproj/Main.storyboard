@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6ps-bl-u58">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--GLKit View Controller-->
+        <scene sceneID="PFe-DH-ke7">
+            <objects>
+                <glkViewController preferredFramesPerSecond="60" id="6ps-bl-u58" customClass="ViewController" customModule="task3" customModuleProvider="target" sceneMemberID="viewController">
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="cbB-DI-zq8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="iYl-KG-rjw"/>
+                        <connections>
+                            <outlet property="delegate" destination="6ps-bl-u58" id="2o5-K4-Hsy"/>
+                            <outletCollection property="gestureRecognizers" destination="19U-GS-5Fy" appends="YES" id="7c2-68-MuV"/>
+                            <outletCollection property="gestureRecognizers" destination="d1g-Pd-4Bj" appends="YES" id="8HT-lG-Kd4"/>
+                            <outletCollection property="gestureRecognizers" destination="WZ0-HE-HWT" appends="YES" id="GAG-1d-dEx"/>
+                        </connections>
+                    </glkView>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wuh-Io-dIi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="19U-GS-5Fy">
+                    <connections>
+                        <action selector="swipeRotate:" destination="6ps-bl-u58" id="xD8-p7-kTW"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <tapGestureRecognizer id="d1g-Pd-4Bj">
+                    <connections>
+                        <action selector="tapEnlarge:" destination="6ps-bl-u58" id="l0D-0X-d2q"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="WZ0-HE-HWT">
+                    <connections>
+                        <action selector="pressLessen:" destination="6ps-bl-u58" id="7fJ-xL-hsS"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+</document>

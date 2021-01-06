@@ -1,0 +1,7 @@
+# Makefile for task2 project
+task2: Source.o
+	gcc -o task2 main.o
+Source.o: Source.c
+	gcc -c Source.c
+clean:
+	rm -f *.o task3
